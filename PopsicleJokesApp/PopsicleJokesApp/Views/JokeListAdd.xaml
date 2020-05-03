@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PopsicleJokesApp.Views.JokeListAdd">
+    <ContentPage.Content>
+        <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+            <Label Text="Enter a new joke: "/>
+            <Entry Text="{Binding Content}"/>
+            <Button Text="Save" Clicked="JokeSave"/>
+            <Button Text="Cancel" Clicked="JokeCancel"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
